@@ -5,6 +5,8 @@
 
   let tickArray = [];
 
+  let bustArray = [];
+
 
 
 window.alert("Bomb Dice: Roll two dice with the same number of sides. The more you roll, the higher your score, at risk of explosion.")
@@ -14,10 +16,12 @@ window.alert("If the sum of your roll is less then the sum of your previous roll
 window.alert("You may chose to stop rolling and subit your score when you think you will have the highest score of the round")
 
 
-function bombDiceGame(){
+function bombDiceGame() {
+	if(tickArray[4] >= "Tick!" )
+		window.alert("Tick bust!")
+	
 
 }
-
 
 function fourSidedDie() {
 	let d1 = (Math.floor(Math.random() * 4) + 1);
